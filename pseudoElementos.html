@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+	<head>
+		<style type="text/css">
+			.left {
+				background-color: #819FF7;
+				float: left;
+				height: 50px;
+			}
+			
+			.right {
+				background-color: #2E9AFE;
+				float: right;
+				height: 80px;
+			}
+			
+			.clearfix {
+				background-color: #9FF781;
+			}
+			
+			/* No agregar espacio luego de los dos puntos (:) */
+			.clearfix:before, 
+			.clearfix:after {
+				content: "================================================================";
+				clear: both;
+				display: table;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="clearfix">
+			CONTENIDO
+			<div class="left">LEFT</div>
+			<div class="right">RIGHT</div>
+		</div>
+	</body>
+</html>
